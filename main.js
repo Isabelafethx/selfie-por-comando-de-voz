@@ -21,14 +21,14 @@ recognition.onresult = function(event) {
     
     if(Content =="tire minha selfie")
     {
-        console.log("tirando sefie --- ");
+        console.log("tirando selfie --- ");
     speak();
     }
 }
 
 function speak(){
     var synht = window.speechSynthesis;
-    speakData = document.getElementById("textbox").value;  
+    speakData ="tirando sua selfie em 5 segundos";  
     var utterThis = new SpeechSynthesisUtterance(speakData);
     synht.speak(utterThis);
     Webcam.attach(camera);
